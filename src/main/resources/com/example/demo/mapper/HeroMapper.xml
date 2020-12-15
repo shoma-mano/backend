@@ -12,16 +12,16 @@
   )
   </insert>
   
-  <select id="getHeroes" resultType="com.example.model.Hero">
-  select * from hero
-  </select>
+  <select id="getHeroes" parameterType="String" resultType="com.example.model.Hero">
+  select * from Hero where email=#{email}
+  </select> 
   
   <select id="getHero" parameterType="int" resultType="com.example.model.Hero">
-  select * from hero where id=#{id}
+  select * from Hero where id=#{id}
   </select>
   
   <delete id="deleteHero" parameterType="int">
-  delete from hero where id =#{id}
+  delete from Hero where id =#{id}
   </delete>
   
   <update id="updateHero" parameterType="com.example.model.Hero">

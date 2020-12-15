@@ -11,7 +11,7 @@ public interface HeroMapper {
 	
 void insertHero(Hero hero);
 
-public List<Hero> getHeroes();
+public List<Hero> getHeroes(String email);
 
 public Hero getHero(int id);
 
