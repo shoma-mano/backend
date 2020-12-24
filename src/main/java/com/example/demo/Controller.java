@@ -55,6 +55,13 @@ Hero insertHero(@RequestBody Hero hero){
   return  heroMapper.getHeroes();
 }
 
+@CrossOrigin
+@GetMapping("/getHeroes/{email}")
+ public List<Hero> getHeros(@PathVariable("email") String email){
+System.out.println("hello");
+  return  heroMapper.getHeroesfromemail(email);
+}
+
 
 @CrossOrigin
 @GetMapping("/getMarvelHeroes")

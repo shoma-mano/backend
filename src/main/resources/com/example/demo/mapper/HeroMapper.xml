@@ -16,6 +16,10 @@
   select * from Hero 
   </select> 
   
+    <select id="getHeroesfromemail"  resultType="com.example.model.Hero">
+  select * from Hero where email=#{email}
+  </select>
+  
   <select id="getMarvelHeroes" resultType="com.example.model.Hero">
   select * from marvelhero
   </select>

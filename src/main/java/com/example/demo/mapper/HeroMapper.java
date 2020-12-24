@@ -15,6 +15,8 @@ public List<Hero> getMarvelHeroes();
 
 public List<Hero> getHeroes();
 
+public List<Hero> getHeroesfromemail(String email);
+
 public Hero getHero(int id);
 
 void deleteHero(int id);
