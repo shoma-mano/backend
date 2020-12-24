@@ -6,6 +6,7 @@ import lombok.Data;
 public class Hero {
 
 	private int id;
+	private String url;
 	private String name;
 	private String email;
 }

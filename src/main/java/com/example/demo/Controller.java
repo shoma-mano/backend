@@ -47,14 +47,21 @@ Hero insertHero(@RequestBody Hero hero){
      return hero;
 }
 
+
 @CrossOrigin
-@GetMapping("/getHeroes/{email}")
- public List<Hero> getHeros(@PathVariable String email){
+@GetMapping("/getHeroes")
+ public List<Hero> getHeros(){
 	
-  this.heroes=heroMapper.getHeroes(email);
-  System.out.println(email);
-  System.out.println(heroes.get(0));
-  return  heroMapper.getHeroes(email);
+  return  heroMapper.getHeroes();
+}
+
+
+@CrossOrigin
+@GetMapping("/getMarvelHeroes")
+ public List<Hero> getMarvelHeros(){
+  this.heroes=heroMapper.getHeroes();
+  System.out.println("hello");
+  return  heroMapper.getMarvelHeroes();
 }
 
 
