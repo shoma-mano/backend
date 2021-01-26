@@ -97,7 +97,6 @@ System.out.println(email);
 @CrossOrigin
 @GetMapping("searchHero")
   List<Hero> searchHero(@RequestParam("name") String name){
-  System.out.println(heroMapper.searchHero(name).get(0).getName());
   return heroMapper.searchHero(name);
 }
 
