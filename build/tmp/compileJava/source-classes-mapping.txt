@@ -1,0 +1,8 @@
+com/example/demo/mapper/HeroMapper.java
+ com.example.demo.mapper.HeroMapper
+com/example/demo/SampleMybatisApplication.java
+ com.example.demo.SampleMybatisApplication
+com/example/demo/Controller.java
+ com.example.demo.Controller
+com/example/model/Hero.java
+ com.example.model.Hero
