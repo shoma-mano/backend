@@ -4,7 +4,7 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.example.demo.mapper.HeroMapper">
   <insert id="insertHero" parameterType="com.example.model.Hero">
-  insert into Hero (name,url,email)
+  insert into hero (name,url,email)
   values(
        #{name},
        #{url},
@@ -17,7 +17,7 @@
   </select> 
   
     <select id="getHeroesfromemail"  resultType="com.example.model.Hero">
-  select * from Hero where email=#{email}
+  select * from hero where email=#{email}
   </select>
   
   <select id="getMarvelHeroes" resultType="com.example.model.Hero">
@@ -25,11 +25,11 @@
   </select>
   
   <select id="getHero" parameterType="int" resultType="com.example.model.Hero">
-  select * from Hero where id=#{id}
+  select * from hero where id=#{id}
   </select>
   
   <delete id="deleteHero" parameterType="int">
-  delete from Hero where id =#{id}
+  delete from hero where id =#{id}
   </delete>
   
   <update id="updateHero" parameterType="com.example.model.Hero">
