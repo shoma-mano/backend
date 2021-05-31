@@ -23,12 +23,10 @@ public class SampleMybatisApplication implements CommandLineRunner {
   public static void main(String[] args) {
     SpringApplication.run(SampleMybatisApplication.class, args);
   }
+  
 
   @Override
-  public void run(String... args) throws Exception {
-
-    
-  }
+  public void run(String... args) throws Exception {  System.out.println("hello"); }
   
   
  
